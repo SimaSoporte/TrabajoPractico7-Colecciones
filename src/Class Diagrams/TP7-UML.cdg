@@ -27,7 +27,7 @@
       <Methods>
         <Method name="getIdMateria" returnType="int" visibility="public"/>
         <Method name="setIdMateria" returnType="void" visibility="public">
-          <Argument type="int" name="materia"/>
+          <Argument type="int" name="idMateria"/>
         </Method>
         <Method name="getNombre" returnType="String" visibility="public"/>
         <Method name="setNombre" returnType="void" visibility="public">
