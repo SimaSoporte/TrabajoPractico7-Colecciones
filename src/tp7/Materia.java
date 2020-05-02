@@ -21,4 +21,22 @@ public class Materia {
     public void setAnio(int anio) { this.anio = anio;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if ( o != null && o instanceof Materia ) {
+            Materia mat = (Materia)o;
+            if ( this.idMateria == mat.getIdMateria() ) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return idMateria;
+    }
+
 }

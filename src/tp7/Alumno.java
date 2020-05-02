@@ -39,7 +39,7 @@ public class Alumno {
         }
     }
 
-    private int cantidadMaterias() {
+    public int cantidadMaterias() {
         return misMaterias.size();
     }
     
