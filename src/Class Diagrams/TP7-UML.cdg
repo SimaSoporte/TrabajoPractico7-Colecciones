@@ -69,13 +69,14 @@
         <Method name="agrgarMateria" returnType="void" visibility="public">
           <Argument type="Materia" name="m"/>
         </Method>
-        <Method name="cantidadMaterias" returnType="int" visibility="public"/>
+        <Method name="cantidadMaterias" returnType="int" visibility="private"/>
+        <Method name="listarMaterias" returnType="void" visibility="public"/>
       </Methods>
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <UseRelation name="materia" source="Colegio" target="Materia" sourceCardinality="1..*" targetCardinality="1..1"/>
     <HasRelation name="materia" source="Alumno" target="Materia" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
     <UseRelation name="alumno" source="Colegio" target="Alumno" sourceCardinality="1..*" targetCardinality="1..1"/>
+    <UseRelation name="materia" source="Colegio" target="Materia" sourceCardinality="1..*" targetCardinality="1..1"/>
   </ClassDiagramRelations>
 </ClassDiagram>
